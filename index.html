@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+
+    <title>Liam Portfolio</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <nav class="animate-reveal animate-fourth navbar navbar-expand-lg navbar-light fixed-top" id="mainNavbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto nav-styling">
+                        <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+                        <li class="nav-item"><a href="#resume" class="nav-link">RESUME</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <div class="animate-reveal animate-fourth">
+            
+        </div> -->
+        <div class="row justify-content-between align-content-start">
+            <div class="col-6 animate-reveal animate-first"><h1>Liam McCabe</h1></div>
+        </div>
+        <div class="row mt-5 py-5 justify-content-center">
+            <div class="col-4 animate-reveal animate-second">
+                <div class="img-container rounded-circle">
+                    <img src="Liam.jpg" alt="Liam" width="300px">
+                </div>
+            </div>
+            <div class="col-4 align-items-center d-flex animate-reveal animate-third">
+                    <ul class="info-list">
+                        <li>Student at Cal Poly Pomona
+                            <ul>
+                                <li>3rd Year Computer Science Major</li>
+                                <li>Focus on Software Engineering</li>
+                            </ul>
+                        </li>
+                        <li>Member of:
+                            <ul>
+                                <li>Cal Poly Pomona Computer Science Society</li>
+                                <li>Cal Poly Pomona Google Student Developer Club</li>
+                                <li>Pi Kappa Alpha Fraternity</li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><hr>
+    <section id="resume">
+        <div class="row reveal">
+            <div class="col">
+                <h2 class="display-3 pt-3">About Me</h2>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+    <script>
+        $(function() {
+          $(document).scroll(function(){
+            var $nav = $("#mainNavbar");
+            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+          })
+        })
+      </script>
+
+  </body>
+</html>
