@@ -15,60 +15,176 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
 
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Liam Portfolio</title>
   </head>
   <body>
-    <div class="container-fluid">
-        <nav class="animate-reveal animate-fourth navbar navbar-expand-lg navbar-light fixed-top" id="mainNavbar">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto nav-styling">
-                        <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
-                        <li class="nav-item"><a href="#resume" class="nav-link">RESUME</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- <div class="animate-reveal animate-fourth">
-            
-        </div> -->
-        <div class="row justify-content-between align-content-start">
+      <nav class="animate-reveal animate-fourth navbar navbar-expand-md navbar-light fixed-top" id="mainNavbar">
+          <div class="container-fluid">
+              <button class="ml-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navLinks">
+                  <ul class="ml-auto navbar-nav nav-styling text-right">
+                      <li class="nav-item"><a href="#home" class="nav-link">HOME</a></li>
+                      <li class="nav-item"><a href="#resume" class="nav-link">RESUME</a></li>
+                      <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    <section class="container-fluid mb-5" id="home">
+        <div class="row">
             <div class="col-6 animate-reveal animate-first"><h1>Liam McCabe</h1></div>
         </div>
         <div class="row mt-5 py-5 justify-content-center">
             <div class="col-4 animate-reveal animate-second">
-                <div class="img-container rounded-circle">
+                <div class="card img-container rounded-circle">
                     <img src="./assets/liamImg.jpg" alt="Liam" width="300px">
+                </div>
+                <div class="row">
+                    <blockquote class="blockquote">
+                        <p>I am passionate and ready to learn everything I can in the realm of computing</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">Liam McCabe</figcaption>
                 </div>
             </div>
             <div class="col-4 align-items-center d-flex animate-reveal animate-third">
                     <ul class="info-list">
                         <li>Student at Cal Poly Pomona
-                            <ul>
-                                <li>3rd Year Computer Science Major</li>
-                                <li>Focus on Software Engineering</li>
+                            <ul class="info-sublist">
+                                <li class="dashed">3rd Year Computer Science Major</li>
+                                <li class="dashed">Focus on Software Engineering</li>
                             </ul>
                         </li>
                         <li>Member of:
-                            <ul>
-                                <li>Cal Poly Pomona Computer Science Society</li>
-                                <li>Cal Poly Pomona Google Student Developer Club</li>
-                                <li>Pi Kappa Alpha Fraternity</li>
+                            <ul class="info-sublist">
+                                <li class="dashed">Cal Poly Pomona Computer Science Society</li>
+                                <li class="dashed">Cal Poly Pomona Google Student Developer Club</li>
+                                <li class="dashed">Pi Kappa Alpha Fraternity</li>
                             </ul>
                         </li>
                     </ul>
             </div>
         </div>
-    </div>
-    <br><br><br><br><hr>
-    <section id="resume">
+        
+    </section>
+    <hr class="mx-5 hr-dashed reveal">
+    <section class="container-fluid mb-5" id="resume">
         <div class="row reveal">
             <div class="col">
                 <h2 class="display-3 pt-3">About Me</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <h2 class="col-4 reveal">Experience</h2>
+            <h2 class="col-4 reveal">Skills</h2>
+            <h2 class="col-4 reveal">Projects</h2>
+        </div>
+        <div class="row">
+            <hr class="col-10 reveal">
+        </div>
+        <div class="row text-center reveal">
+            <div class="col-4">
+                <h3>Funding Shield Intern</h3>
+                <p class="date mb-1">December 2021 - February 2022</p>
+                <p class="">Process company and customer requests for mortgage loan information through use of company web based tools in order to combat and prevent mortgage fraud.</p>
+                <br>
+                <h3>Coffee Bean and Tea Leaf</h3>
+                <p class="date mb-1">September 2021 - Present</p>
+                <p class="">I help guests to their satisfaction by using excellent customer service skills in order to serve them to their satisfaction while also providing an enjoyable experience.</p>
+            
+            </div>
+            <div class="col-4 text-center">
+                <div class="row">
+                    <div class="col-6"><h3>Proficient</h3>
+                        <hr>
+                        <ul class="centered-list">
+                            <li>Java</li>
+                            <li>C++</li>
+                            <li>SQL</li>
+                            <li>Git</li>
+                            <li>HTML5</li>
+                            <li>Javascript</li>
+                            <li>CSS</li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <div class="col-6"><h3>Exposure</h3>
+                        <hr>
+                        <ul class="centered-list text-center">
+                            <li>Python</li>
+                            <li>C</li>
+                            <li>Bash</li>
+                            <li>Typescript</li>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+                <div>
+                    <h3>Certifications</h3>
+                    <hr>
+                    <ul class="centered-list">
+                        <li>Microsoft Office</li>
+                    </ul>
+                    <hr>
+                </div>
+                
+            </div>
+            <div class="col-4">
+                <h3>Student Management System</h3>
+                <p class="date mb-1">Java, SQL</p>
+                <p class="">A GUI based program that stores, views, and edits a local SQL database in order to keep track of student information. A work in progress, code can be found on GitHub as StudentManagement.</p>
+                <br>
+                <h3>Ecommerce Site</h3>
+                <p class="date mb-1">Typescript, HTML5, CSS, Express, React.js, SQL</p>
+                <p class="">A work in progress ecommerce site that a group of peers and I have begun building using react, express, and mysql. The overall goal of the project is to improve our skills in all aspects of the development process.</p>
+                <br>
+                <h3>Book Warehouse</h3>
+                <p class="date mb-1">C++</p>
+                <p class="">A c++ executable that reads textbook information from a .dat file and creates objects for each entry which is then stored in a linked list which can be searched by isbn.</p>
+                <br>
+            </div>
+        </div>
+    </section>
+    <hr class="mx-5 hr-dashed reveal">
+    <section class="container-fluid" id="contact">
+        <div class="row reveal">
+            <div class="col">
+                <h2 class="display-3 pt-3">Get in Touch</h2>
+            </div>
+        </div>
+        <div class="row text-center reveal">
+            <h2 class="col-4">Email</h2>
+            <h2 class="col-4">LinkedIn</h2>
+            <h2 class="col-4">GitHub</h2>
+        </div>
+        <div class="row">
+            <hr class="col-10 reveal">
+        </div>
+        <div class="row text-center reveal">
+            <div class="col-4">
+                <a href="mailto:lmccabe267@gmail.com"><button class="btn contact-button">Compose Email <i class="fa fa-envelope"></i></button></a>
+            </div>
+            <div class="col-4">
+                <a href="https://www.linkedin.com/in/liam-mccabe-5a3941216"><button class="btn contact-button">Liam McCabe <i class="fa fa-linkedin-square"></i></button></a>
+            </div>
+            <div class="col-4">
+                <a href="https://github.com/lmccabe267"><button class="btn contact-button">lmccabe267 <i class="fa fa-github"></i></button></a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center text-center mt-5 reveal">
+            <div class="col-6">
+                <h3>Liam McCabe</h3>
+                <hr>
+                <ul class="centered-list">
+                    <li>lmccabe267@gmail.com</li>
+                    <li>Diamond Bar, CA</li>
+                    <li>California State Polytechnic Pomona</li>
+                </ul>
             </div>
         </div>
     </section>
