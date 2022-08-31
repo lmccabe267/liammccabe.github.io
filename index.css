@@ -13,8 +13,7 @@ body{
     margin: 0;
 }
 
-
-#home{
+section{
     height: 100vh;
 }
 
@@ -64,10 +63,6 @@ h1{
 .info-sublist > li:before{
     content: "-";
     text-indent: -5px;
-}
-
-#resume{
-    height: 100vh;
 }
 
 .date{
