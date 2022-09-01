@@ -1,3 +1,6 @@
+$("#toggleButton").click(function(){
+  $("nav").toggleClass("scrolled");
+});
 
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
