@@ -1,5 +1,7 @@
 $("#toggleButton").click(function(){
-  $("nav").toggleClass("scrolled");
+  if(!($("nav").hasClass("scrolled"))){
+    $("nav").toggleClass("green-shade");
+  }
 });
 
 function reveal() {

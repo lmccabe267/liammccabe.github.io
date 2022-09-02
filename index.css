@@ -29,6 +29,12 @@ h1{
     transition: background 500ms;
 }
 
+.green-shade{
+    background: rgb(128,128,128);
+    background: linear-gradient(90deg, rgba(128,128,128,0) 35%, rgba(108,196,161,1) 75%);
+    transition: background 500ms;
+}
+
 .nav-styling{
     text-align: center;
     font-size: 2em;
