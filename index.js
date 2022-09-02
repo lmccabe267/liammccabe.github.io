@@ -4,6 +4,21 @@ $("#toggleButton").click(function(){
   }
 });
 
+$(".close-navbar-toggler").click(function(){
+  if(!($("nav").hasClass("scrolled"))){
+    $("nav").toggleClass("green-shade");
+  }
+});
+
+$(function() {
+  $(document).scroll(function(){
+    $("#navLinks").collapse('hide');
+    var $nav = $("#mainNavbar");
+    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+    $nav.toggleClass("green-shade", $(this).scrollTop() > $nav.height());
+  })
+})
+
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
     for (var i = 0; i < reveals.length; i++) {

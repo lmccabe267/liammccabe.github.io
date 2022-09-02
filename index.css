@@ -23,6 +23,22 @@ h1{
     font-size: 7vw !important;
 }
 
+nav{
+    z-index: 2;
+}
+.close-navbar-toggler{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    z-index:1;
+    cursor:pointer;
+}
+.close-navbar-toggler.collapsed{
+    z-index:-1;
+}
+
 .navbar.scrolled{
     background: rgb(128,128,128);
     background: linear-gradient(90deg, rgba(128,128,128,0) 35%, rgba(108,196,161,1) 75%);
